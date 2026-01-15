@@ -1,3 +1,25 @@
+# Purpose:
+# This Python program compares multithreading and multiprocessing for processing large CSV files.
+# It demonstrates the performance difference between the two approaches.
+# Key Features:
+# - Uses ThreadPoolExecutor for multithreading.
+# - Uses multiprocessing.Pool for multiprocessing.
+# - Processes CSV data in chunks and performs classification tasks.
+# - Measures execution time and reports CPU core/thread usage.
+
+# Expected Output:
+# - Logs for each chunk processed, including thread/process ID, core ID, and duration.
+# - Total processing time for multithreading and multiprocessing.
+# - Example:
+#   🧵 [Thread] Data Chunk ID: 1 ---> CPU Core ID: 2
+#    ℹ Identity Info: PID:12345 | TID:67890
+#    ⏱ Time Consumed: 0.1234s
+#    📊 Classification Result: {'Male - Small': 100, 'Female - Large': 200}
+#   ⚙️ [Process] Data Chunk ID: 2 ---> CPU Core ID: 3
+#    ℹ Identity Info: PID:12346 | TID:N/A
+#    ⏱ Time Consumed: 0.2345s
+#    📊 Classification Result: {'Male - Small': 150, 'Female - Large': 250}
+
 import pandas as pd
 import numpy as np
 import concurrent.futures

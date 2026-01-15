@@ -1,4 +1,24 @@
-﻿import os
+﻿# Purpose:
+# This Python program demonstrates the use of multithreading to process multiple files concurrently.
+# It compares single-threaded and multi-threaded file processing performance.
+# Key Features:
+# - Simulates file processing with random delays.
+# - Uses threading to process files in parallel.
+# - Measures and reports processing time for both approaches.
+
+# Expected Output:
+# - Detailed logs for each file processed, including thread ID, start/end time, and duration.
+# - Total processing time for single-threaded and multi-threaded approaches.
+# - Example:
+#   🚀 [Start] File: file_1.txt | Thread ID: 12345 | Time: 12:34:56.789
+#   📝 File Processing Report - file_1.txt
+#   🧵 Thread ID : 12345 (Worker-file_1.txt)
+#   ⏱ Start Time: 12:34:56.789
+#   🏁 End Time : 12:34:59.123
+#   ⏳ Duration : 2.334s (Simulated delay: 2.33s)
+#   📊 Stats : 12345 chars, 2345 words
+
+import os
 import time
 import random
 import threading
